@@ -159,9 +159,14 @@ backend/
 
 ### Available Scripts
 
-- `npm run dev` - Start development server with hot reload (nodemon)
+- `npm run dev` - Start development server with hot reload
 - `npm run build` - Compile TypeScript to JavaScript
-- `npm start` - Start production server (requires build first)
+- `npm start` - Start production server
+- `npm run db:generate` - Generate Drizzle migration files
+- `npm run db:migrate` - Apply pending migrations to the database
+- `npm run db:studio` - Open Drizzle Studio visual database explorer
+
+> **Note on Migrations:** If you are modifying the database schema please read the **[Database Migration Guide](../MIGRATION_GUIDE.md)** before creating PRs.
 
 ## 🔧 Environment Variables
 
